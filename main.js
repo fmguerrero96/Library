@@ -16,7 +16,25 @@ function addBookToLibrary() {
     let pages = document.querySelector('#pages').value;
     let read = document.querySelector('#read').value;
     let newBook = new Book(title, author, pages, read)
-    console.log(newBook)
+    myLibrary.push(newBook);
+    renderBooks();
+}
+
+function renderBooks(){
+    let booksContainer = document.querySelector('.container');
+    booksContainer.textContent = ''
+    for (let i = 0; i < myLibrary.length; i++){
+        let book = myLibrary[i];
+        let bookElem = document.createElement('div');
+        bookElem.className = 'bookCard'
+        bookElem.innerHTML = `
+            <p class='bookTilte'>${book.title}</p>
+            <p class='bookAuthor'>by: ${book.author}</p>
+            <p class='bookPages'>${book.pages}</p>
+            <p class='readStatus'>${book.read ? "Read" : "Not Read Yet"}</p>
+        `
+        booksContainer.appendChild(bookElem);
+    }
 }
 
 newBookBtn.addEventListener('click', function(){
