@@ -32,9 +32,15 @@ function renderBooks(){
             <p class='bookAuthor'>by: ${book.author}</p>
             <p class='bookPages'>${book.pages}</p>
             <p class='readStatus'>${book.read ? "Read" : "Not Read Yet"}</p>
+            <button class="deleteBtn" onclick='deleteBook(${i})'>Delete</button>
         `
         booksContainer.appendChild(bookElem);
     }
+}
+
+function deleteBook(index){
+    myLibrary.splice(index, 1);
+    renderBooks();
 }
 
 newBookBtn.addEventListener('click', function(){
