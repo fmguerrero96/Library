@@ -1,9 +1,5 @@
 const newBookBtn = document.querySelector('#newBookBtn')
 const submitBook = document.querySelector('#submitBook')
-const btitle = document.querySelector('#title')
-const bauthor = document.querySelector('#author')
-const bpages = document.querySelector('#pages')
-const bread = document.querySelector('#pages')
 
 let myLibrary = [];
 
