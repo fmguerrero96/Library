@@ -1,5 +1,6 @@
 const newBookBtn = document.querySelector('#newBookBtn')
 const submitBook = document.querySelector('#submitBook')
+const modal = document.querySelector('.modal')
 
 let myLibrary = [];
 
@@ -54,14 +55,13 @@ function deleteBook(index){
 }
 
 newBookBtn.addEventListener('click', function(){
-    const newBookForm = document.querySelector('#newBookForm')
-    newBookForm.style.display = 'block'
+    modal.showModal();
 })
 
 submitBook.addEventListener('click', function(event){
     event.preventDefault()
     addBookToLibrary()
-    newBookForm.style.display = 'none'
+    modal.close()
     title.value = ''
     author.value = ''
     pages.value = ''
