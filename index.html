@@ -18,6 +18,8 @@
 
     <dialog class="info-form modal">
       <form id="newBookForm">
+        <h2 class="form-title">Enter Book Info</h3>
+
         <div class="duo">
           <label for="title">Title:</label>
           <input type="text" id="title">
@@ -33,9 +35,10 @@
           <input type="text" id="pages">
         </div>
 
+        <!--these label and input elements are hidden because they were unnecessary-->
         <div class="duo">
-          <label for="read">Read:</label>
-          <input type="checkbox" id="read">
+          <label hidden for="read">Read:</label>
+          <input hidden type="checkbox" id="read">
         </div>  
         
         <input id="submitBook" type="submit" value="Add New Book">
