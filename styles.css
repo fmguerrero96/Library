@@ -98,3 +98,12 @@ header{
 	display: flex;
 	flex-direction: column;
 }
+
+#submitBook {
+	background-color: rgb(38, 38, 38);
+	color: aliceblue;
+	border-radius: 5px;
+	font-weight: bold;
+	border: none;
+	height:4vh;
+}
