@@ -24,7 +24,10 @@ time, mark, audio, video {
 	background-color: rgb(229, 229, 229);
 	box-sizing: border-box;
 	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
 }
+
+/*-------------------HEADER---------------------*/
 
 header{
 	display: flex;
@@ -43,3 +46,25 @@ header{
 	font-weight: bold;
 	background-color:rgb(255, 253, 253);
 }
+
+.btnContainer {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 10vh;
+	flex-direction: column;
+}
+
+#newBookBtn {
+	height: 50%;
+	width: 120px;
+	background-color: rgb(38, 38, 38);
+	color: aliceblue;
+	border-radius: 5px;
+	font-weight: bold;
+	border: none;
+}
+
+/*-------------------FORM/MODAL---------------------*/
+
