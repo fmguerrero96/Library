@@ -107,3 +107,24 @@ header{
 	border: none;
 	height:4vh;
 }
+/*-------------------Book Cards---------------------*/
+.container {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+	border: 1px solid black;
+}
+
+.bookCard {
+	border: 1px solid black;
+	width: 20vw;
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color:rgb(255, 253, 253);
+}
+
+.bookTitle, .bookAuthor, .bookPages, .readStatus {
+	background-color:rgb(255, 253, 253);
+}

@@ -38,12 +38,12 @@ function renderBooks(){
         let bookElem = document.createElement('div');
         bookElem.className = 'bookCard'
         bookElem.innerHTML = `
-            <p class='bookTilte'>Title: ${book.title}</p>
+            <p class='bookTitle'>Title: ${book.title}</p>
             <p class='bookAuthor'>By: ${book.author}</p>
             <p class='bookPages'>Pages: ${book.pages}</p>
             <p class='readStatus'>${book.read ? "Read" : "Not Read Yet"}</p>
             <button class="deleteBtn" onclick='deleteBook(${i})'>Delete</button>
-            <button class="readStatus" onclick='toggleRead(${i})'>Read Status</button>
+            <button class="readBtn" onclick='toggleRead(${i})'>Read Status</button>
         `
         booksContainer.appendChild(bookElem);
     }
