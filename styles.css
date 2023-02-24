@@ -40,7 +40,7 @@ header{
 
 .head-title {
 	text-align: center;
-	color: rgb(79, 79, 79);
+	color: rgb(255, 137, 18);
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
 	font-weight: bold;
@@ -57,13 +57,16 @@ header{
 }
 
 #newBookBtn {
-	height: 50%;
-	width: 120px;
-	background-color: rgb(38, 38, 38);
-	color: aliceblue;
-	border-radius: 5px;
-	font-weight: bold;
+	height: 70%;
+	width: 150px;
+	background-color: rgb(46, 46, 46);
+	color: rgb(255, 255, 255);
 	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
 }
 
 /*-------------------FORM/MODAL---------------------*/
@@ -106,25 +109,53 @@ header{
 	font-weight: bold;
 	border: none;
 	height:4vh;
+	cursor: pointer;
 }
 /*-------------------Book Cards---------------------*/
 .container {
 	display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-	border: 1px solid black;
+    gap: 30px;
+	width: 70vw;
+	margin: auto;
 }
 
 .bookCard {
-	border: 1px solid black;
-	width: 20vw;
-	height: 20vh;
+	border: none;
+	width: .75fr;
+	height: 1fr;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	background-color:rgb(255, 253, 253);
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px rgb(74, 74, 74);
 }
 
 .bookTitle, .bookAuthor, .bookPages, .readStatus {
+	background-color:rgb(255, 253, 253);
+	font-family: 'Source Code Pro', monospace;
+}
+
+.cardLabel, .readStatus {
+	font-weight: bold;
+	background-color:rgb(255, 253, 253) ;
+	font-size: 18px;
+}
+
+.readBtn, .deleteBtn {
+	width: 50%;
+	cursor: pointer;
+	height: 40px;
+	border: none;
+	background-color: rgb(255, 179, 103);
+	border-radius: 5px;
+}
+
+.cardBtns {
+	display: flex;
+	gap: 15px;
 	background-color:rgb(255, 253, 253);
 }
